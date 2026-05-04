@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Vplan</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background: white; }
+        .nav { background: #10a6b5; color: white; padding: 12px; display: flex; justify-content: space-between; align-items: center; }
+        .container { padding: 15px; }
+        h1 { font-size: 32px; font-weight: bold; margin: 10px 0; }
+        .day-bar { border: 1px solid #337ab7; border-radius: 5px; overflow: hidden; margin-bottom: 10px; }
+        .day-item { padding: 10px; font-size: 14px; font-weight: bold; text-align: center; }
+        .day-today { background: #337ab7; color: white; }
+        .day-tomorrow { background: #5bc0de; color: white; border-top: 1px solid white; }
+        .badge-pill { background: white; color: #337ab7; border-radius: 10px; padding: 2px 8px; font-size: 11px; margin-left: 5px; }
+        .v-table-container { border: 1px solid #337ab7; border-radius: 4px; margin-top: 20px; overflow: hidden; }
+        .v-table-header { background: #337ab7; color: white; padding: 8px 12px; font-size: 14px; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { background: #f9f9f9; border: 1px solid #ddd; padding: 8px; color: #666; text-align: left; }
+        td { border: 1px solid #ddd; padding: 12px 8px; color: #333; }
+        .footer-info { text-align: right; font-style: italic; font-size: 11px; color: #777; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="nav"><span>Limesschule</span><span style="font-size:24px;">≡</span></div>
+    <div class="container">
+        <h1>Mein Vplan</h1>
+        <div class="day-bar">
+            <div class="day-item day-today">Montag, 04.05 <span class="badge-pill">1</span> <span style="background:#5bc0de; padding:2px 5px; border-radius:3px; font-size:10px;">heute</span></div>
+            <div class="day-item day-tomorrow">Dienstag, 05.05 <span style="background:#777; padding:2px 5px; border-radius:3px; font-size:10px;">morgen</span></div>
+        </div>
+
+        <div class="v-table-container">
+            <div class="v-table-header">Vertretungen am 04.05.2026</div>
+            <div style="padding:10px; background: white;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Stunde</th>
+                            <th>Klasse</th>
+                            <th>Vertretung</th>
+                            <th>Art</th>
+                            <th>Fach</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>3 - 4</td>
+                            <td>10bR</td>
+                            <td>Gimeno Rios (GIM)</td>
+                            <td>Vertretung</td>
+                            <td>M</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="footer-info">Letzte Aktualisierung: 04.05.2026 um 12:49:42 Uhr</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

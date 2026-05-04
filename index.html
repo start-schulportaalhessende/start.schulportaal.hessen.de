@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limeschule Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            background: url('https://i.imgur.com/OOQFav2.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* HEADER */
+        .header {
+            background: #10a6b5;
+            color: white;
+            padding: 12px 16px;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            padding: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* SECTION BOXES */
+        .section-block {
+            margin: 16px 0;
+            padding: 12px;
+            border-radius: 14px;
+            border: 2px solid rgba(255,255,255,0.4);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .section-title {
+            margin: 0 5px 12px;
+            font-weight: bold;
+            color: #002c59;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* CARD STYLING */
+        a {
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            border-radius: 10px;
+            padding: 14px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            transition: transform 0.1s ease;
+        }
+
+        .card:active {
+            transform: scale(0.98);
+        }
+
+        .card i {
+            font-size: 20px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .subtext {
+            font-size: 12px;
+            font-weight: normal;
+            opacity: 0.85;
+            margin-top: 2px;
+        }
+
+        .badge {
+            margin-left: auto;
+            background: rgba(255,255,255,0.25);
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+
+        /* COLORS */
+        .blue { background-color: #337ab7; }
+        .darkblue { background-color: #2c3e50; }
+        .green { background-color: #4cae4c; }
+        .lightgreen { background-color: #a9d6a1; color: #333; }
+        .teal { background-color: #1db7b0; }
+        .orange { background-color: #f0ad4e; color: #fff; }
+        .pink { background-color: #e91e63; }
+        .gray { background-color: #777; }
+
+        /* Custom Specific Borders */
+        .communication { border-color: rgba(51, 122, 183, 0.5); }
+        .material { border-color: rgba(29, 183, 176, 0.5); }
+        .platforms { border-color: rgba(233, 30, 99, 0.5); }
+        .orga { border-color: rgba(76, 174, 76, 0.5); }
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <span>Limesschule</span>
+    <i class="fas fa-bars"></i>
+</div>
+
+<div class="container">
+
+    <div class="section-block">
+        <a href="unterricht.html">
+            <div class="card blue">
+                <i class="fas fa-address-book"></i>
+                <div>
+                    mein Unterricht
+                    <div class="subtext">1 Hausaufgabe unerledigt</div>
+                </div>
+                <span class="badge">1</span>
+            </div>
+        </a>
+
+        <div class="card darkblue">
+            <i class="fas fa-wifi"></i>
+            WLAN-Voucher
+        </div>
+
+        <div class="card lightgreen">
+            <i class="fas fa-file-alt"></i>
+            Dokumenten-Informationssystem
+            <span class="badge">114</span>
+        </div>
+
+        <a href="stundenplan.html">
+            <div class="card darkblue">
+                <i class="fas fa-clock"></i>
+                Stundenplan
+            </div>
+        </a>
+
+        <a href="vplan.html">
+            <div class="card green">
+                <i class="fas fa-exchange-alt"></i>
+                Vertretungsplan
+                <span class="badge">1</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="section-block communication">
+        <div class="section-title">Kommunikation</div>
+        <div class="card blue">
+            <i class="fas fa-video"></i>
+            Videokonferenz (BigBlueButton)
+        </div>
+    </div>
+
+    <div class="section-block material">
+        <div class="section-title">Lernmaterialien</div>
+        <div class="card teal">
+            <i class="fas fa-font"></i>
+            Anton.App
+        </div>
+        <div class="card orange">
+            <i class="fas fa-lightbulb"></i>
+            Mauswiesel
+        </div>
+    </div>
+
+    <div class="section-block platforms">
+        <div class="section-title">Lernplattformen</div>
+        <div class="card gray">
+            <i class="fas fa-door-open"></i>
+            Backdoor Moodle
+        </div>
+        <div class="card pink">
+            <i class="fas fa-user-graduate"></i>
+            Berufswahlapp
+        </div>
+        <div class="card orange">
+            <i class="fas fa-graduation-cap"></i>
+            SchulMoodle
+        </div>
+    </div>
+
+    <div class="section-block orga">
+        <div class="section-title">Schulorganisation</div>
+        <div class="card blue">
+            <i class="fas fa-check-square"></i>
+            Kurswahlen
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

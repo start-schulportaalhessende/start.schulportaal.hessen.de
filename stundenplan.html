@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stundenplan - 10bR</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background: white; }
+        .nav { background: #10a6b5; color: white; padding: 12px; display: flex; justify-content: space-between; }
+        .container { padding: 10px; }
+        .header-box { margin-bottom: 10px; }
+        .class-name { font-size: 28px; font-weight: bold; }
+        .week-indicator { text-align: right; font-size: 11px; margin-bottom: 10px; color: #444; }
+        .un-badge { background: #4cae4c; color: white; padding: 2px 6px; border-radius: 10px; font-weight: bold; }
+        
+        table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+        th { border: 1px solid #ccc; padding: 8px; font-size: 11px; background: #fcfcfc; font-weight: normal; color: #333; }
+        td { border: 1px solid #ccc; height: 110px; vertical-align: top; padding: 4px; text-align: center; font-size: 10px; overflow: hidden; }
+        .stunde-col { width: 35px; vertical-align: middle; background: #fcfcfc; color: #666; font-size: 12px; }
+        
+        .subject { font-weight: bold; display: block; margin-bottom: 1px; font-size: 11px; }
+        .teacher { display: block; color: #555; }
+        .wpu-cell { background: #fffde7; font-size: 9px; line-height: 1.1; }
+        .wpu-item { border-bottom: 1px solid #eee; padding-bottom: 1px; margin-bottom: 1px; display: block; }
+    </style>
+</head>
+<body>
+    <div class="nav"><span>Limesschule</span><span>≡</span></div>
+    <div class="container">
+        <div class="header-box">
+            <span class="class-name">10bR</span> <span style="color:#888; font-size: 20px;">Stundenplan</span>
+        </div>
+        <div class="week-indicator">04.05.2026: Diese Woche ist eine <span class="un-badge">Un</span> Woche.</div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th class="stunde-col">Stunde</th>
+                    <th>Montag</th>
+                    <th>Dienstag</th>
+                    <th>Mittwoch</th>
+                    <th>Donnerstag</th>
+                    <th>Freitag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="stunde-col">1.</td>
+                    <td><span class="subject">Phy B 213</span><span class="teacher">HUL</span></td>
+                    <td><span class="subject">Bio B 015</span><span class="teacher">ENG</span></td>
+                    <td>
+                        <span class="subject">Rel ev1 C 205</span><span class="teacher">CEB</span><br>
+                        <span class="subject">Eth2 C 201</span><span class="teacher">KUP</span>
+                    </td>
+                    <td><span class="subject">M C 205</span><span class="teacher">FÜH</span></td>
+                    <td><span class="subject">D C 208</span><span class="teacher">KAP</span></td>
+                </tr>
+                <tr>
+                    <td class="stunde-col">3.</td>
+                    <td><span class="subject">M C 205</span><span class="teacher">FÜH</span></td>
+                    <td><span class="subject">E C 203</span><span class="teacher">KAN</span></td>
+                    <td><span class="subject">D C 208</span><span class="teacher">KAP</span></td>
+                    <td><span class="subject">Geo B 312</span><span class="teacher">OES</span></td>
+                    <td><span class="subject">Ch B 316</span><span class="teacher">DRY</span></td>
+                </tr>
+                <tr>
+                    <td class="stunde-col">5.</td>
+                    <td class="wpu-cell"><span class="subject">Ku B 215</span><span class="teacher">ENG</span></td>
+                    <td class="wpu-cell"><span class="subject">Bio B 015</span><span class="teacher">HUL</span></td>
+                    <td class="wpu-cell" style="border: 2px solid #337ab7;">
+                        <span class="subject">WPU (III)</span><span class="teacher">OES</span>
+                    </td>
+                    <td class="wpu-cell">
+                        <span class="wpu-item">WPU Inf B (OES)</span>
+                        <span class="wpu-item">WPU Span (HUL)</span>
+                        <span class="wpu-item">WPU Kunst (ENG)</span>
+                    </td>
+                    <td><span class="subject">E C 203</span><span class="teacher">KAN</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

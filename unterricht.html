@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mein Unterricht - Limeschule</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: white; color: #333; }
+        .nav-bar { background: #10a6b5; color: white; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center; }
+        .main-title { padding: 15px; display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: bold; border-bottom: 1px solid #eee; }
+        .filter-buttons { padding: 10px 15px; display: flex; gap: 5px; flex-wrap: wrap; }
+        .btn-action { border: none; border-radius: 4px; padding: 6px 12px; font-size: 13px; color: white; font-weight: 500; }
+        .btn-blue { background: #337ab7; }
+        .btn-orange { background: #f0ad4e; }
+        .section-header { padding: 20px 15px 10px; font-size: 22px; font-weight: normal; }
+        .subject-card { display: flex; padding: 12px 15px; border-bottom: 1px solid #e1e1e1; align-items: flex-start; gap: 12px; position: relative; }
+        .subject-icon { color: #337ab7; font-size: 20px; margin-top: 3px; }
+        .subject-content { flex-grow: 1; }
+        .subject-name { color: #337ab7; font-size: 19px; font-weight: 500; margin-bottom: 2px; }
+        .teacher-tag { background: #337ab7; color: white; padding: 2px 6px; border-radius: 3px; font-size: 11px; display: inline-flex; align-items: center; gap: 3px; margin-bottom: 5px; }
+        .info-text { font-size: 12px; color: #444; line-height: 1.4; }
+        .date-text { font-size: 11px; color: #888; display: block; margin-top: 2px; }
+        .entry-btn { background: #337ab7; color: white; padding: 5px 10px; border-radius: 4px; font-size: 11px; text-decoration: none; white-space: nowrap; margin-left: 10px; }
+        .hw-label { background: #5cb85c; color: white; padding: 2px 5px; border-radius: 3px; font-size: 10px; font-weight: bold; display: inline-block; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <div class="nav-bar"><span>Limesschule</span><i class="fas fa-bars"></i></div>
+    <div class="main-title"><i class="fas fa-address-book"></i> mein Unterricht</div>
+    <div class="filter-buttons">
+        <button class="btn-action btn-blue"><i class="fas fa-calendar"></i> Einträge wochenweise</button>
+        <button class="btn-action btn-orange"><i class="fas fa-smile"></i> Kurzanleitungen</button>
+    </div>
+    
+    <div class="section-header">Aktuelle Einträge</div>
+    
+    <div class="subject-card">
+        <div class="subject-icon"><i class="fas fa-user-square"></i></div>
+        <div class="subject-content">
+            <div class="subject-name">Biologie 10br</div>
+            <div class="teacher-tag">ENG <i class="fas fa-caret-down"></i> <i class="fas fa-print"></i></div>
+            <div class="info-text">DNA <span class="date-text">28.04.2026</span></div>
+        </div>
+        <a href="#" class="entry-btn"><i class="fas fa-list"></i> alle Einträge</a>
+    </div>
+
+    <div class="subject-card">
+        <div class="subject-icon"><i class="fas fa-user-square"></i></div>
+        <div class="subject-content">
+            <div class="subject-name">Chemie 10br</div>
+            <div class="teacher-tag">DRY <i class="fas fa-caret-down"></i> <i class="fas fa-print"></i></div>
+            <div class="info-text">Galvanische Zelle, Themen der Arbeit <span class="date-text">24.04.2026</span></div>
+        </div>
+        <a href="#" class="entry-btn"><i class="fas fa-list"></i> alle Einträge</a>
+    </div>
+
+    <div class="subject-card">
+        <div class="subject-icon"><i class="fas fa-user-square"></i></div>
+        <div class="subject-content">
+            <div class="subject-name">Deutsch 10br</div>
+            <div class="teacher-tag">KAP <i class="fas fa-caret-down"></i> <i class="fas fa-print"></i></div>
+            <div class="info-text">Grammatik-Übungen <span class="date-text">23.04.2026</span></div>
+        </div>
+        <a href="#" class="entry-btn"><i class="fas fa-list"></i> alle Einträge</a>
+    </div>
+
+    <div class="subject-card">
+        <div class="subject-icon"><i class="fas fa-user-square"></i></div>
+        <div class="subject-content">
+            <div class="subject-name">Englisch 10br (101E02-R)</div>
+            <div class="teacher-tag">KAN <i class="fas fa-caret-down"></i> <i class="fas fa-print"></i></div>
+            <div class="info-text">Listening and Reading <span class="date-text">22.04.2026</span></div>
+        </div>
+        <a href="#" class="entry-btn"><i class="fas fa-list"></i> alle Einträge</a>
+    </div>
+
+    <div class="subject-card">
+        <div class="subject-icon"><i class="fas fa-user-square"></i></div>
+        <div class="subject-content">
+            <div class="subject-name">Mathematik 10br</div>
+            <div class="teacher-tag">FÜH <i class="fas fa-caret-down"></i> <i class="fas fa-print"></i></div>
+            <div class="info-text">Mathearbeit Nr. 4 <span class="date-text">30.04.2026</span></div>
+            <div class="hw-label"><i class="fas fa-home"></i> Hausaufgabe</div>
+        </div>
+        <a href="#" class="entry-btn"><i class="fas fa-list"></i> alle Einträge</a>
+    </div>
+
+</body>
+</html>
